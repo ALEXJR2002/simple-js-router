@@ -69,5 +69,10 @@ function router(evt) {
     
 };
 
+function reload () {
+    window.location.reload();
+}
+
 window.addEventListener('load', router);
 window.addEventListener('hashchange', router);
+window.addEventListener('hashchange', reload);
